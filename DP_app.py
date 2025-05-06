@@ -10,7 +10,50 @@ import seaborn as sns
 import os
 
 st.set_page_config(page_title="Diabetes Prediction App", layout="wide")
-st.title("Diabetes Prediction using SVM")
+
+st.title("""Diabetes Prediction using SVM""")
+
+st.sidebar.title("📘 About")
+st.sidebar.markdown("""
+### 🩺 About This App
+Welcome to the Diabetes Prediction App – a user-friendly tool designed to help individuals and healthcare professionals assess the likelihood of diabetes based on key medical parameters. Built using Machine Learning and Streamlit, this app provides a quick and intuitive way to analyze health data and make informed decisions.
+
+### 🔍 How It Works
+This app uses a trained Machine Learning model that analyzes input features such as:
+
+Glucose Level
+
+Blood Pressure
+
+Age
+
+Insulin Levels
+
+DiabetesPedigreeFunction
+
+The model was trained on the Pima Indian Diabetes Dataset, a well-known dataset in the medical ML community.
+
+### 🎯 Objective
+The main goals of this project are:
+
+To provide an early, non-invasive prediction of diabetes risk.
+
+To showcase how ML can be applied in healthcare for real-time decision support.
+
+To demonstrate the integration of predictive modeling with interactive web apps using Streamlit.
+
+### 🛠️ Technologies Used
+Python
+
+Scikit-learn
+
+Pandas & NumPy
+
+Matplotlib & Seaborn
+
+Streamlit
+    """)
+
 
 # Load local CSV file directly
 csv_file = "diabetes.csv"
